@@ -1,3 +1,6 @@
+STREAMIT_HOME = $(shell pwd)
+export STREAMIT_HOME
+
 all:
 	if test -d src; then $(MAKE) -C src; fi
 	if test -d library/c; then $(MAKE) -C library/c; fi
